@@ -1,0 +1,12 @@
+org 00H
+MOV R7, #0B3H
+MOV A,R7
+ANL A, #0C3H
+MOV R5, A
+RR A
+RR A
+RR A
+RR A
+ORL A, R5
+MOV R5, A
+end 
